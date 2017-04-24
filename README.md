@@ -1,2 +1,2 @@
-# launchbar
-LaunchBar Actions
+# LaunchBar
+LaunchBar Custom Actions
