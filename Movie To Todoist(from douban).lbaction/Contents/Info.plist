@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.joilence.LaunchBar.Action.douban</string>
+	<string>com.joilence.LaunchBar.Action.MoviesToTodoist</string>
 	<key>CFBundleName</key>
-	<string>DouBan</string>
+	<string>Movie To Todoist</string>
 	<key>LBDebugLogEnabled</key>
 	<true/>
 	<key>LBDescription</key>
 	<dict>
 		<key>LBAuthor</key>
-		<string></string>
+		<string>Jonathan Yang</string>
 		<key>LBEmail</key>
-		<string></string>
+		<string>cjyk84719@gmail.com</string>
 		<key>LBTwitter</key>
 		<string></string>
 		<key>LBWebsiteURL</key>
@@ -29,12 +29,10 @@
 			</array>
 			<key>LBKeepWindowActive</key>
 			<true/>
-			<key>LBLiveFeedbackEnabled</key>
-			<true/>
 			<key>LBRequiresArgument</key>
 			<true/>
 			<key>LBResultType</key>
-			<string>string</string>
+			<string>unknown</string>
 			<key>LBReturnsResult</key>
 			<true/>
 			<key>LBScriptName</key>
