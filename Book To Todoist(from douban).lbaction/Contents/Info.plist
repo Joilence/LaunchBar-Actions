@@ -3,34 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>doubanmovie.png</string>
+	<string>doubandushu.jpeg</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.joilence.LaunchBar.Action.MoviesToTodoist</string>
+	<string>com.joilence.LaunchBar.Action.BookToTodoist</string>
 	<key>CFBundleName</key>
-	<string>Movie To Todoist</string>
+	<string>Book To Todoist</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>LBArgument</key>
-	<string>Movie Name</string>
+	<string>Book Title</string>
 	<key>LBDebugLogEnabled</key>
 	<true/>
 	<key>LBDescription</key>
 	<dict>
 		<key>LBArgument</key>
-		<string>Movie Name</string>
+		<string>Book Title</string>
 		<key>LBAuthor</key>
 		<string>Jonathan Yang</string>
 		<key>LBEmail</key>
 		<string>cjyk84719@gmail.com</string>
 		<key>LBResult</key>
-		<string>Search List</string>
+		<string>Search List -&gt; Book Details</string>
 		<key>LBTwitter</key>
 		<string></string>
 		<key>LBWebsiteURL</key>
 		<string></string>
 	</dict>
 	<key>LBResult</key>
-	<string>Search List</string>
+	<string>Search List -&gt; Book Details</string>
 	<key>LBScripts</key>
 	<dict>
 		<key>LBDefaultScript</key>
