@@ -14,7 +14,8 @@ function runWithString(keyword) {
 				'alwaysShowsSubtitle': true,
 				'subtitle': getSubtitle(book),
 				'label': getLabel(book['rating']['average']),
-				'children': getDetailItems(book)
+				'children': getDetailItems(book),
+				'icon': 'book.png'
 			})
 		}
 
@@ -31,7 +32,8 @@ function runWithString(keyword) {
 }
 
 function addTaskURL(book) {
-	var content = book['title'] + ' - ' + book['rating']['average'];
+	var content = '[' + book['title'] + ' - ' + book['rating']['average']
+				+ ']' + '(' +  book['alt'] + ')';
 	var urlScheme = addTodoistTask + 'content=' + content;
 	return urlScheme;
 }
@@ -65,11 +67,13 @@ function getDetailItems(book) {
 	items.push(
 		{
 			'title': 'Add to Todoist',
-			'url': addTaskURL(book)
+			'url': addTaskURL(book),
+			'icon': 'todoist.png'
 		},
 		{
 			'title': '《' + book['title'] + '》 (豆瓣链接)',
-			'url': book['alt']
+			'url': book['alt'],
+			'icon': 'douban.png'
 		},
 		{
 			'title': '作者简介：' + book['author_intro']

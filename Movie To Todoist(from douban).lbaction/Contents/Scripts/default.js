@@ -14,8 +14,8 @@ function runWithString(keyword) {
 				'alwaysShowsSubtitle': true,
 				'subtitle': getSubtitle(movie),
 				'label': getLabel(movie['rating']['average']),
-				'actionReturnsItems': getDetails(movie),
-				'url': addAsTodoistTask(movie)
+				'children': getDetailItems(movie),
+				'icon': 'movie.png'
 			})
 		}
 
@@ -31,10 +31,10 @@ function runWithString(keyword) {
 	}
 }
 
-function addAsTodoistTask(movie) {
-	var content = movie['title'] + ' - ' + movie['rating']['average'];
+function addTaskURL(movie) {
+	var content = '[' + movie['title'] + ' - ' + movie['rating']['average']
+				+ ']' + '(' + movie['alt'] + ')';
 	var urlScheme = addTodoistTask + 'content=' + content;
-	// LaunchBar.openURL(urlScheme);
 	return urlScheme;
 }
 
@@ -59,9 +59,21 @@ function getLabel(rating) {
 	return stars + ' ' + rating;
 }
 
-function getDetails(movie) {
+function getDetailItems(movie) {
 	var items = [];
-	items.push({
-		'title': movie['year'] + '年'
-	})
+
+	items.push(
+		{
+			'title': 'Add to Todoist',
+			'url': addTaskURL(movie),
+			'icon': 'todoist.png'
+		},
+		{
+			'title': movie['title'] + ' (豆瓣链接)',
+			'url': movie['alt'],
+			'icon': 'douban.png'
+		}
+	);
+
+	return items;
 }
