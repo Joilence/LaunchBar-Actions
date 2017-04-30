@@ -10,7 +10,7 @@ function runWithString(keyword) {
 		var items = [];
 		for (var book of booklist) {
 			items.push({
-				'title': book['title'] + 2,
+				'title': book['title'],
 				'alwaysShowsSubtitle': true,
 				'subtitle': getSubtitle(book),
 				'label': getLabel(book['rating']['average']),

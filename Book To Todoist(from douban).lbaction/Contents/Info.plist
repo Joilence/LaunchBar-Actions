@@ -24,6 +24,8 @@
 		<string>cjyk84719@gmail.com</string>
 		<key>LBResult</key>
 		<string>Search List -&gt; Book Details</string>
+		<key>LBSummary</key>
+		<string>For Chinese user only since the data comes from Chinese website.</string>
 		<key>LBTwitter</key>
 		<string></string>
 		<key>LBWebsiteURL</key>
