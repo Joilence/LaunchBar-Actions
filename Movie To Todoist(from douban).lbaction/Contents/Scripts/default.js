@@ -14,8 +14,10 @@ function runWithString(keyword) {
 				'alwaysShowsSubtitle': true,
 				'subtitle': getSubtitle(movie),
 				'label': getLabel(movie['rating']['average']),
-				'children': getDetailItems(movie),
-				'icon': 'movie.png'
+				// 'children': getDetailItems(movie),
+				'icon': 'movie.png',
+				'url': addTaskURL(movie),
+				'quickLookURL': movie['alt']
 			})
 		}
 

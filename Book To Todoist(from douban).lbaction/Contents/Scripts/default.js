@@ -14,8 +14,10 @@ function runWithString(keyword) {
 				'alwaysShowsSubtitle': true,
 				'subtitle': getSubtitle(book),
 				'label': getLabel(book['rating']['average']),
-				'children': getDetailItems(book),
-				'icon': 'book.png'
+				// 'children': getDetailItems(book),
+				'icon': 'book.png',
+				'url': addTaskURL(book),
+				'quickLookURL': book['alt']
 			})
 		}
 
@@ -61,39 +63,39 @@ function getLabel(rating) {
 	return stars + ' ' + rating;
 }
 
-function getDetailItems(book) {
-	var items = [];
+// function getDetailItems(book) {
+// 	var items = [];
 
-	items.push(
-		{
-			'title': 'Add to Todoist',
-			'url': addTaskURL(book),
-			'icon': 'todoist.png'
-		},
-		{
-			'title': '《' + book['title'] + '》 (豆瓣链接)',
-			'url': book['alt'],
-			'icon': 'douban.png'
-		},
-		{
-			'title': '作者简介：' + book['author_intro']
-		},
-		{
-			'title': (book['translator'].length == 0) ? '' : ', ' + book['translator'][0] + '/译'
-		},
-		{
-			'title': book['rating']['average'] + '分, '
-					+ book['rating']['numRaters'] + ' 人评分'
-		},
-		{
-			'title':  '内容简介：' + book['summary']
-		},
-		{
-			'title': 'ISBN：' + book['isbn13']
-		}
-	);
+// 	items.push(
+// 		{
+// 			'title': 'Add to Todoist',
+// 			'url': addTaskURL(book),
+// 			'icon': 'todoist.png'
+// 		},
+// 		{
+// 			'title': '《' + book['title'] + '》 (豆瓣链接)',
+// 			'url': book['alt'],
+// 			'icon': 'douban.png'
+// 		},
+// 		{
+// 			'title': '作者简介：' + book['author_intro']
+// 		},
+// 		{
+// 			'title': (book['translator'].length == 0) ? '' : ', ' + book['translator'][0] + '/译'
+// 		},
+// 		{
+// 			'title': book['rating']['average'] + '分, '
+// 					+ book['rating']['numRaters'] + ' 人评分'
+// 		},
+// 		{
+// 			'title':  '内容简介：' + book['summary']
+// 		},
+// 		{
+// 			'title': 'ISBN：' + book['isbn13']
+// 		}
+// 	);
 
-	items.push
+// 	items.push
 
-	return items;
-}
+// 	return items;
+// }
