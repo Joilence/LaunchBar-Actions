@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>/System/Library/PreferencePanes/Bluetooth.prefPane/Contents/Resources/AppIcon.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.inspira.bluetoothaudio</string>
+	<key>CFBundleName</key>
+	<string>Bluetooth Audio</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.2</string>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBAuthor</key>
+		<string>Dominique Da Silva</string>
+		<key>LBRequirements</key>
+		<string>https://github.com/deweller/switchaudio-osx</string>
+		<key>LBSummary</key>
+		<string>Connect a paired Bluetooth Audio device and switch system audio output. Press Alt-Key to disconnect device.</string>
+		<key>LBTwitter</key>
+		<string>@domadp</string>
+		<key>LBWebsiteURL</key>
+		<string>https://github.com/atika/launchbar</string>
+	</dict>
+	<key>LBRequirements</key>
+	<string>https://github.com/deweller/switchaudio-osx</string>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBKeepWindowActive</key>
+			<true/>
+			<key>LBResultType</key>
+			<string>unknown</string>
+			<key>LBReturnsResult</key>
+			<true/>
+			<key>LBScriptName</key>
+			<string>BluetoothAudio.py</string>
+		</dict>
+	</dict>
+	<key>LBTextInputTitle</key>
+	<string>Select an Option</string>
+</dict>
+</plist>

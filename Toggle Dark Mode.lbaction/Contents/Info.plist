@@ -3,17 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>Paste as MD Link.png</string>
+	<string>noun_dark_2960752.png</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.joilence.LaunchBar.Action.PasteAsMDLink</string>
+	<string>com.joilence.LaunchBar.DarkMode</string>
 	<key>CFBundleName</key>
-	<string>Paste as MD Link</string>
+	<string>Dark Mode</string>
 	<key>LBAbbreviation</key>
-	<string>PML</string>
+	<string>DM</string>
 	<key>LBDescription</key>
 	<dict>
 		<key>LBAuthor</key>
 		<string>Joilence</string>
+		<key>LBSummary</key>
+		<string>Switch between Dark Mode and Light Mode. The icon is dark by Phạm Thanh Lộc from the Noun Project</string>
 		<key>LBTwitter</key>
 		<string></string>
 		<key>LBWebsiteURL</key>
@@ -25,10 +27,8 @@
 		<dict>
 			<key>LBResultType</key>
 			<string>unknown</string>
-			<key>LBRunInBackground</key>
-			<true/>
 			<key>LBScriptName</key>
-			<string>default.js</string>
+			<string>default.scpt</string>
 		</dict>
 	</dict>
 </dict>

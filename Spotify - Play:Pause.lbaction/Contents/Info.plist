@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>Paste as MD Link.png</string>
+	<string>com.spotify.client</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.joilence.LaunchBar.Action.PasteAsMDLink</string>
+	<string>net.linzner.LaunchBar.action.SpotifyPlayPause</string>
 	<key>CFBundleName</key>
-	<string>Paste as MD Link</string>
+	<string>Play/Pause</string>
+	<key>CFBundleVersion</key>
+	<string>1.1</string>
 	<key>LBAbbreviation</key>
-	<string>PML</string>
+	<string>Spotify</string>
 	<key>LBDescription</key>
 	<dict>
 		<key>LBAuthor</key>
-		<string>Joilence</string>
+		<string>Manfred Linzner</string>
+		<key>LBSummary</key>
+		<string>This action toggles between play and pause in Spotify.</string>
 		<key>LBTwitter</key>
-		<string></string>
+		<string>@mlinzner</string>
 		<key>LBWebsiteURL</key>
-		<string>https://github.com/Joilence/LaunchBar-Actions</string>
+		<string>https://www.linzner.net/</string>
 	</dict>
 	<key>LBScripts</key>
 	<dict>
@@ -25,11 +29,11 @@
 		<dict>
 			<key>LBResultType</key>
 			<string>unknown</string>
-			<key>LBRunInBackground</key>
-			<true/>
 			<key>LBScriptName</key>
-			<string>default.js</string>
+			<string>default.scpt</string>
 		</dict>
 	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2015 Manfred Linzner</string>
 </dict>
 </plist>
