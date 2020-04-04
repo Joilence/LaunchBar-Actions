@@ -3,19 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>Paste as MD Link.png</string>
+	<string>font-awesome:fa-wifi</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.joilence.LaunchBar.Action.PasteAsMDLink</string>
+	<string>com.joilence.LaunchBar.RestartWiFi</string>
 	<key>CFBundleName</key>
-	<string>Paste as MD Link</string>
-	<key>LBAbbreviation</key>
-	<string>PML</string>
+	<string>Restart WiFi</string>
 	<key>LBDescription</key>
 	<dict>
 		<key>LBAuthor</key>
 		<string>Joilence</string>
-		<key>LBTwitter</key>
-		<string></string>
+		<key>LBSummary</key>
+		<string>Modified from actions in https://github.com/BlackwinMin/launchbar-gallery by @Minja_Lin.</string>
 		<key>LBWebsiteURL</key>
 		<string>https://github.com/Joilence/LaunchBar-Actions</string>
 	</dict>
@@ -25,10 +23,8 @@
 		<dict>
 			<key>LBResultType</key>
 			<string>unknown</string>
-			<key>LBRunInBackground</key>
-			<true/>
 			<key>LBScriptName</key>
-			<string>default.js</string>
+			<string>default.scpt</string>
 		</dict>
 	</dict>
 </dict>

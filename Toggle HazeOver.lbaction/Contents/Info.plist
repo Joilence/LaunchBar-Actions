@@ -3,32 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>Paste as MD Link.png</string>
+	<string>HazeOver Icon.png</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.joilence.LaunchBar.Action.PasteAsMDLink</string>
+	<string>com.joilence.LaunchBar.action.ToggleHazeOver</string>
 	<key>CFBundleName</key>
-	<string>Paste as MD Link</string>
+	<string>Toggle HazeOver</string>
 	<key>LBAbbreviation</key>
-	<string>PML</string>
+	<string>HO</string>
+	<key>LBAssociatedApplication</key>
+	<string>com.pointum.hazeover</string>
 	<key>LBDescription</key>
 	<dict>
 		<key>LBAuthor</key>
 		<string>Joilence</string>
+		<key>LBSummary</key>
+		<string>Toggle HazeOver, using icon of HazeOver</string>
 		<key>LBTwitter</key>
 		<string></string>
 		<key>LBWebsiteURL</key>
 		<string>https://github.com/Joilence/LaunchBar-Actions</string>
 	</dict>
+	<key>LBRequiredApplication</key>
+	<string>com.pointum.hazeover</string>
 	<key>LBScripts</key>
 	<dict>
 		<key>LBDefaultScript</key>
 		<dict>
 			<key>LBResultType</key>
 			<string>unknown</string>
-			<key>LBRunInBackground</key>
-			<true/>
 			<key>LBScriptName</key>
-			<string>default.js</string>
+			<string>default.scpt</string>
 		</dict>
 	</dict>
 </dict>

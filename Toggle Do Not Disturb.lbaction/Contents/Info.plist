@@ -2,18 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleIconFile</key>
-	<string>Paste as MD Link.png</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.joilence.LaunchBar.Action.PasteAsMDLink</string>
+	<string>com.joilence.LaunchBar.Action.ToggleDoNotDisturb</string>
 	<key>CFBundleName</key>
-	<string>Paste as MD Link</string>
-	<key>LBAbbreviation</key>
-	<string>PML</string>
+	<string>Toggle Do Not Disturb</string>
 	<key>LBDescription</key>
 	<dict>
 		<key>LBAuthor</key>
 		<string>Joilence</string>
+		<key>LBEmail</key>
+		<string></string>
 		<key>LBTwitter</key>
 		<string></string>
 		<key>LBWebsiteURL</key>
@@ -25,10 +23,8 @@
 		<dict>
 			<key>LBResultType</key>
 			<string>unknown</string>
-			<key>LBRunInBackground</key>
-			<true/>
 			<key>LBScriptName</key>
-			<string>default.js</string>
+			<string>default.scpt</string>
 		</dict>
 	</dict>
 </dict>
