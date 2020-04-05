@@ -4,7 +4,15 @@ My repository of LaunchBar Actions.
 
 (Since this repo also works as my LaunchBar Actions backup, it also contains actions made by other authors, which I'll list at the end with credits.)
 
-<!-- TOC -->autoauto- [LaunchBar Actions](#launchbar-actions)auto  - [My Actions](#my-actions)auto  - [Archive](#archive)auto  - [Actions From Other Authors](#actions-from-other-authors)auto  - [Recommend Actions Resources](#recommend-actions-resources)autoauto<!-- /TOC -->
+<!-- TOC -->
+
+- [LaunchBar Actions](#launchbar-actions)
+  - [My Actions](#my-actions)
+  - [Archive](#archive)
+  - [Actions From Other Authors](#actions-from-other-authors)
+  - [Recommend Actions Resources](#recommend-actions-resources)
+
+<!-- /TOC -->
 
 ## My Actions
 
