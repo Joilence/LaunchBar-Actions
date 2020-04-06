@@ -20,6 +20,14 @@ My repository of LaunchBar Actions.
 
   Inspired by [Bear App](https://bear.app/). Just copy an URL, go to the editor and call the action, then it will paste the link as Markdown `[]()`.
   
+  Required python package:
+  - requests
+  - pyobjc
+  - pyperclip
+  - BeautifulSoup4
+
+  and you may have to spcify python interpreter by [Shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)
+  
 - **Toggle HazeOver**
   
   As the name says, toggle [HazeOver](https://hazeover.com/).
