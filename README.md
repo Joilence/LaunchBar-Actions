@@ -38,7 +38,11 @@ My repository of LaunchBar Actions.
 
 - **Restart WiFi**
   
-  Modified from the action in [GitHub - BlackwinMin/launchbar-gallery: Original macOS LaunchBar actions by Minja.](https://github.com/BlackwinMin/launchbar-gallery) by @Minja_Lin.
+  Modified from the action in [BlackwinMin/launchbar-gallery](https://github.com/BlackwinMin/launchbar-gallery) by @Minja_Lin.
+
+- **Bluetooth Audio**
+
+  Modified from the action in [atika/launchbar](https://github.com/atika/launchbar), fix notification problem.
 
 ## Archive
 
@@ -52,13 +56,13 @@ My repository of LaunchBar Actions.
   
   快速搜索豆瓣电影评价，`Cmd + Y` 可以预览详情页面，`Enter` 可以加入到 Todoist。使用方式与 `Book to Todoist` 相同。
 
+- **Connect / Disconnect to EarBuds** from [Manfred Linzner](https://linzner.net)
+
 ## Actions From Other Authors
 
-- **Bluetooth Audio** - From [atika/launchbar](https://github.com/atika/launchbar)
 - **Switch Audio** - From [prenagha/launchbar](https://github.com/prenagha/launchbar)
 - **Spotify - Play:Pause** - From [mlinzner/LaunchBarActions/actions/Control Spotify](https://github.com/mlinzner/LaunchBarActions/tree/master/actions/Control%20Spotify)
 - **Google Translate** from LK
-- **Connect / Disconnect to EarBuds** from [Manfred Linzner](https://linzner.net)
 
 ## Recommend Actions Resources
 
