@@ -24,20 +24,10 @@ switchaudiotest=os.system('test -x /usr/local/bin/SwitchAudioSource')
 if switchaudiotest != 0:
 	menu.append({"title":"SwitchAudio not found", "subtitle":"Please install SwitchAudio : brew install switchaudio-osx", "icon": "BottomBarStopTemplate.pdf"})	
 
-# NSUserNotification
-def notify(title, subtitle, info_text, delay=0, sound=False, userInfo={}):
-    NSUserNotification = objc.lookUpClass('NSUserNotification')
-    NSUserNotificationCenter = objc.lookUpClass('NSUserNotificationCenter')
-    notification = NSUserNotification.alloc().init()
-    notification.setTitle_(title)
-    notification.setSubtitle_(subtitle)
-    notification.setInformativeText_(info_text)
-    notification.setUserInfo_(userInfo)
-    if sound:
-        notification.setSoundName_("NSUserNotificationDefaultSoundName")
-    notification.setDeliveryDate_(Foundation.NSDate.dateWithTimeInterval_sinceDate_(delay, Foundation.NSDate.date()))
-    NSUserNotificationCenter.defaultUserNotificationCenter().scheduleNotification_(notification)
-
+def notify(title, text):
+    os.system("""
+              osascript -e 'tell application "LaunchBar" to display notification "{}" with title "{}"'
+              """.format(text, title))
 
 if len(sys.argv) > 1:
 	# Activate Bluetooth Device
@@ -48,7 +38,7 @@ if len(sys.argv) > 1:
 
 		# Disconnect device
 		if device.isConnected() and cmdkey == "1":
-			notify("LaunchBar", myitem['name']+' Bluetooth device disconnected',"",0, sound=False)
+			notify("LaunchBar", myitem['name']+' Bluetooth device disconnected')
 			device.closeConnection()
 		else:
 			# Connect device and set system audio output
@@ -56,12 +46,12 @@ if len(sys.argv) > 1:
 			time.sleep(1)
 			result = os.system('/usr/local/bin/SwitchAudioSource -s "%s" >/dev/null' % (myitem['name']) )
 			if result != 0:
-				notify("LaunchBar Error", "Error when switching audio output to "+myitem['name'],"",0, sound=False)
+				notify("LaunchBar Error", "Error when switching audio output to "+myitem['name'])
 			else:
-				notify("LaunchBar", myitem['name']+" Connected","Bluetooth Audio switched audio output.",0, sound=False)
+				notify("LaunchBar", myitem['name']+" connected, and audio output has been switched.")
 	else:
-		print "Not a valid mac address"
-		notify("LaunchBar Error", "Not a valid mac address","",0, sound=False)
+		print("Not a valid mac address")
+		notify("LaunchBar Error", "Not a valid mac address")
 		
 # List Bluetooth Audio Device
 devices = IOBluetoothDevice.pairedDevices()
@@ -89,4 +79,4 @@ if len(menu) == 0:
 		"icon": "BottomBarStopTemplate.pdf"
 	})
 
-print json.dumps( menu )
+print(json.dumps(menu))
