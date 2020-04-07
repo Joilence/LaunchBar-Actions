@@ -44,7 +44,7 @@ try:
         req = requests.get(url)
         if req.status_code == 200:
             soup = BeautifulSoup(req.text)
-            title = soup.head.title.text
+            title = "".join(soup.head.title.text.strip().splitlines())
             mdlink = '[' + title + '](' + url + ')'
             notify('LaunchBar: Paste as MD Link', 'MDLink: ' + mdlink)
             pyperclip.copy(mdlink)
