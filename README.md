@@ -36,14 +36,6 @@ My repository of LaunchBar Actions.
   
   Switch between Dark Mode and Light Mode. Using AppleScript from [here](https://www.40tech.com/2018/09/30/use-launchbar-to-toggle-dark-mode-in-mojave/).
 
-- **Restart WiFi**
-  
-  Modified from the action in [BlackwinMin/launchbar-gallery](https://github.com/BlackwinMin/launchbar-gallery) by @Minja_Lin.
-
-- **Bluetooth Audio**
-
-  Modified from the action in [atika/launchbar](https://github.com/atika/launchbar), fix notification problem.
-
 ## Archive
 
 - **Book to Todoist (from douban)**
@@ -59,6 +51,18 @@ My repository of LaunchBar Actions.
 - **Connect / Disconnect to EarBuds** from [Manfred Linzner](https://linzner.net)
 
 ## Actions From Other Authors
+
+- **Restart WiFi**
+  
+  Modified from the action in [BlackwinMin/launchbar-gallery](https://github.com/BlackwinMin/launchbar-gallery) by @Minja_Lin.
+
+- **Bluetooth Audio**
+
+  Modified from the action in [atika/launchbar](https://github.com/atika/launchbar), fixed the notification problem.
+
+- **Keyboard Maestro Macros**
+
+  Modified from the action [mlinzner/LaunchBarActions](https://github.com/mlinzner/LaunchBarActions), only show macros I want to trigger in the folder "LBTriggerMacros".
 
 - **Switch Audio** - From [prenagha/launchbar](https://github.com/prenagha/launchbar)
 - **Spotify - Play:Pause** - From [mlinzner/LaunchBarActions/actions/Control Spotify](https://github.com/mlinzner/LaunchBarActions/tree/master/actions/Control%20Spotify)
