@@ -36,6 +36,8 @@ My repository of LaunchBar Actions.
   
   Switch between Dark Mode and Light Mode. Using AppleScript from [here](https://www.40tech.com/2018/09/30/use-launchbar-to-toggle-dark-mode-in-mojave/).
 
+- **Bear Search**
+
 ## Archive
 
 - **Book to Todoist (from douban)**
