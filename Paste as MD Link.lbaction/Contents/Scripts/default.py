@@ -34,6 +34,10 @@ def ospaste():
 pb = NSPasteboard.generalPasteboard()
 url = pb.stringForType_(NSStringPboardType)
 
+header_info = {
+    'User-Agent':'Paw/3.1.9 (Macintosh; OS X/10.15.4) GCDHTTPRequest',
+}
+
 notify('LaunchBar: Paste as MD Link', 'Requesting: ' + url)
 
 try:
@@ -41,7 +45,7 @@ try:
     if not isValidURL(url):
         raise Exception(url + ' is not a valid URL.')
     else:
-        req = requests.get(url)
+        req = requests.get(url, headers=header_info)
         if req.status_code == 200:
             soup = BeautifulSoup(req.text)
             title = "".join(soup.head.title.text.strip().splitlines())
